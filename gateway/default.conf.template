@@ -29,7 +29,7 @@ upstream backend {
 }
 
 server {
-  listen       80;
+  listen       8082;
 
   add_header X-XSS-Protection "1; mode=block";
   add_header Content-Security-Policy $csp_header;
